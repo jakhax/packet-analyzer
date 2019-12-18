@@ -10,7 +10,7 @@ var captureCmd = &cobra.Command{
 	Use:"capture",
 	Short: "Capture packets",
 	RunE:func(cmd *cobra.Command, args []string)(err error){
-		devices,err := cmd.Flags().GetStringArray("device")
+		devices,err := cmd.Flags().GetStringArray("devices")
 		if err != nil{
 			return
 		}
